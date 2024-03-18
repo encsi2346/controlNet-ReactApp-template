@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row; /* Change to row to place the App-header side by side */
+  align-items: flex-start; /* Align items at the start of the flex container */
+  justify-content: center;
 }
 
 .App-logo {
@@ -7,7 +11,7 @@
   pointer-events: none;
 }
 
-.App-header {
+.header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,6 +21,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 
+  flex: 1; /* Occupy remaining space */
+  padding: 20px; /* Add padding for better spacing */
 }
 
 .App-link {

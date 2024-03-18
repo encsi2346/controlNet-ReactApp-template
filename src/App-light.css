@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row; /* Change to row to place the App-header side by side */
+  align-items: flex-start; /* Align items at the start of the flex container */
+  justify-content: center;
 }
 
 .App-logo {
@@ -16,6 +20,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #333; /* Dark text color for light mode */
+
+  flex: 1; /* Occupy remaining space */
+  padding: 20px; /* Add padding for better spacing */
 }
 
 .App-link {
